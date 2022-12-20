@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nacionalidade </h1>
+    <p>Qual pais você nasceu? <input type="text" name="nacio" id="nacio"> <input type="button" value="Verificar" onclick="resultado()"></p>
+    <div id="mostar"></div>
+
+    <script>
+        var Nacionalidade = document.getElementById("nacio")
+        var mostar1 = document.getElementById("mostar")
+        function resultado(){
+            if (Nacionalidade == 'Brasil'){
+                mostar1.innerHTML = "você é brasileiro"
+            }else{
+            mostar1.innerHTML = "voce é estragneiro"
+        }
+    }
+    </script>
+</body>
+</html>
