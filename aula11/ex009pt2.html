@@ -12,13 +12,13 @@
     <div id="mostar"></div>
 
     <script>
-        var Nacionalidade = document.getElementById("nacio")
+        var nacionalidade = document.getElementById("nacio")
         var mostar1 = document.getElementById("mostar")
         function resultado(){
-            if (Nacionalidade == 'Brasil'){
+            if (nacionalidade.value == 'brasil' || (nacionalidade.value = "Brasil") ){
                 mostar1.innerHTML = "você é brasileiro"
             }else{
-            mostar1.innerHTML = "voce é estragneiro"
+            mostar1.innerHTML = "voce é estrangeiro"
         }
     }
     </script>
